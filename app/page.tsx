@@ -65,8 +65,8 @@ export default function Page() {
           <h1>Переезды и перевозки в Гамбурге и пригородах</h1>
           <p>Кастенваген + тентованный грузовик с гидробортом. Быстро, аккуратно, почасово/фикс.</p>
           <div className="cta-row">
-            <a className="btn btn-primary" href={`tel:${process.env.NEXT_PUBLIC_CALL_E164 || process.env.CALL_E164 || "+49401234567"}`}>Позвонить</a>
-            <a className="btn btn-whatsapp" href={`https://wa.me/${(process.env.NEXT_PUBLIC_WHATSAPP_E164 || process.env.WHATSAPP_E164 || "+491701234567").replace(/\+/g,"")}?text=${encodeURIComponent("Hallo! Ich brauche einen Umzug in Hamburg.")}`}>WhatsApp</a>
+            <a className="btn btn-primary" href={`tel:${process.env.NEXT_PUBLIC_CALL_E164}`}>Позвонить</a>
+            <a className="btn btn-whatsapp" href={`https://wa.me/${(process.env.NEXT_PUBLIC_WHATSAPP_E164 || "").replace(/\+/g, "")}?text=${encodeURIComponent("Hallo! Ich brauche einen Umzug in Hamburg.")}`} target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a className="btn btn-ghost" href="#termin">Онлайн‑запись</a>
           </div>
         </div>
